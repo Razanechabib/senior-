@@ -286,32 +286,7 @@ Users can export or generate:
 
 ---
 
-## 📌 Important Notes for GitHub
 
-Before uploading the project to GitHub, it is recommended to **remove these files/folders**:
-
-```bash
-venv/
-__pycache__/
-db.sqlite3
-*.pyc
-```
-
-Also make sure your `.gitignore` includes:
-
-```bash
-venv/
-env/
-__pycache__/
-*.pyc
-db.sqlite3
-staticfiles/
-.env
-```
-
-Do not upload private keys, passwords, or sensitive patient data.
-
----
 
 ## 📦 Requirements
 
@@ -326,27 +301,6 @@ Install them using:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## 🌐 Deployment
-
-This project includes a `Procfile`, which can be useful for deployment platforms such as Heroku or similar hosting services.
-
-Example Procfile:
-
-```bash
-web: gunicorn capstone.wsgi
-```
-
-Before deployment, update the following settings:
-
-* Set `DEBUG = False`
-* Add your production domain to `ALLOWED_HOSTS`
-* Use environment variables for secret keys
-* Configure static file serving
-* Use a production database if needed
-
 ---
 
 ## 🔮 Future Improvements
@@ -372,5 +326,3 @@ Developed by Razane Chabib
 ## 📄 License
 
 This project is for educational and academic purposes.
-
-You may add an open-source license such as MIT if you want others to reuse or contribute to the project.
